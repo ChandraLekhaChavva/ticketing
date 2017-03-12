@@ -138,7 +138,7 @@ func main() {
 				}()
 			case 4:
 				conn.Write([]byte("Welcome - Sales\r\n"))
-				ticker := time.NewTicker(time.Millisecond * 5000)
+				ticker := time.NewTicker(time.Millisecond * 30000)
 				go func() {
 					for l := range receiptCh {
 						conn.Write([]byte("Ticket Purchased by Person: " + strconv.Itoa(l.PersonNumber) + ".\r\n"))

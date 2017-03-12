@@ -2,7 +2,6 @@ package goticketing
 
 // Theatre : describe what this function does
 type Theatre struct {
-	ID               int
 	Screens          []Screen
 	TotalTicketsSold int
 }
@@ -37,7 +36,7 @@ type Receipt struct {
 // GetCafeteriaMoq : Mock data for Cafeteria
 func GetCafeteriaMoq() Cafeteria {
 	cafeteria := Cafeteria{
-		NoOfSodas: 10,
+		NoOfSodas: 200,
 	}
 	return cafeteria
 }
@@ -45,37 +44,36 @@ func GetCafeteriaMoq() Cafeteria {
 // GetTheatreMoq : Mock data for theatre
 func GetTheatreMoq() Theatre {
 	theatre := Theatre{
-		ID: 1,
 		Screens: []Screen{
 			{ID: 1, Shows: []Show{
-				{ID: 1, NoOfSeats: 2},
-				{ID: 2, NoOfSeats: 2},
-				{ID: 3, NoOfSeats: 2},
-				{ID: 4, NoOfSeats: 2},
+				{ID: 1, NoOfSeats: 100},
+				{ID: 2, NoOfSeats: 100},
+				{ID: 3, NoOfSeats: 100},
+				{ID: 4, NoOfSeats: 100},
 			}},
 			{ID: 2, Shows: []Show{
-				{ID: 1, NoOfSeats: 2},
-				{ID: 2, NoOfSeats: 2},
-				{ID: 3, NoOfSeats: 2},
-				{ID: 4, NoOfSeats: 2},
+				{ID: 1, NoOfSeats: 100},
+				{ID: 2, NoOfSeats: 100},
+				{ID: 3, NoOfSeats: 100},
+				{ID: 4, NoOfSeats: 100},
 			}},
 			{ID: 3, Shows: []Show{
-				{ID: 1, NoOfSeats: 2},
-				{ID: 2, NoOfSeats: 2},
-				{ID: 3, NoOfSeats: 2},
-				{ID: 4, NoOfSeats: 2},
+				{ID: 1, NoOfSeats: 100},
+				{ID: 2, NoOfSeats: 100},
+				{ID: 3, NoOfSeats: 100},
+				{ID: 4, NoOfSeats: 100},
 			}},
 			{ID: 4, Shows: []Show{
-				{ID: 1, NoOfSeats: 2},
-				{ID: 2, NoOfSeats: 2},
-				{ID: 3, NoOfSeats: 2},
-				{ID: 4, NoOfSeats: 2},
+				{ID: 1, NoOfSeats: 100},
+				{ID: 2, NoOfSeats: 100},
+				{ID: 3, NoOfSeats: 100},
+				{ID: 4, NoOfSeats: 100},
 			}},
 			{ID: 5, Shows: []Show{
-				{ID: 1, NoOfSeats: 2},
-				{ID: 2, NoOfSeats: 2},
-				{ID: 3, NoOfSeats: 2},
-				{ID: 4, NoOfSeats: 2},
+				{ID: 1, NoOfSeats: 100},
+				{ID: 2, NoOfSeats: 100},
+				{ID: 3, NoOfSeats: 100},
+				{ID: 4, NoOfSeats: 100},
 			}},
 		},
 	}
